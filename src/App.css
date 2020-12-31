@@ -1,0 +1,172 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.App {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  height: 700px;
+  color: #fff;
+  background-color: #ff6666;
+  box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 2.6rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  margin-left: 3px;
+  margin-top: 0.2rem;
+}
+
+span {
+  width: 300px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 80%;
+}
+
+input[type="text"] {
+  border: none;
+  height: 50px;
+  padding: 25px;
+}
+
+input[type="text"]:focus {
+  outline: none !important;
+  text-align: center;
+  box-shadow: 0 0 10px #FFF;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  border: 1px solid #fff !important;
+  width: 20px;
+  padding: 10px;
+  background: none;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("./images/baseline_done.png");
+  margin: 0px;
+  position: relative;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.test {
+  padding: 0 !important;
+  width: 300px !important;
+  height: 25px !important;
+}
+
+li {
+  margin: 5px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-filter {
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  background: none;
+  width: 120px;
+  cursor: pointer;
+}
+
+.btn-filter:disabled,
+.btn-filter[disabled]{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  color: #ff6666;
+}
+
+.btn-add {
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  background: none;
+  width: 100px;
+}
+
+.btn-delete {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: none;
+  width: 25px;
+  padding: 2px;
+  text-align: center;
+  margin: 0;
+}
+
+.btn-delete img {
+  width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    margin-top: 50px;
+  }
+}
